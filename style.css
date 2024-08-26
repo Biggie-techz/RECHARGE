@@ -67,6 +67,7 @@ input {
   background-color: var(--quaternary-color);
   background-color: transparent;
   backdrop-filter: blur(5px);
+  border: 1px solid var(--primary-color);
 }
 
 select {
@@ -98,7 +99,6 @@ select option {
   font-size: 1rem;
   border-radius: 30px;
   outline: none;
-  border: 1px solid var(--primary-color);
   color: var(--quaternary-color);
 }
 
