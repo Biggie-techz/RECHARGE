@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>RECHARGE PIN GENERATOR</h1>
+    <div class="top">
+      <div class="select-option">
+        <select id="provider">
+          <option value="0">Choose Provider</option>
+          <option value="MTN">MTN</option>
+          <option value="GLO">GLO</option>
+          <option value="AIRTEL">AIRTEL</option>
+          <option value="9mobile">9mobile</option>
+        </select>
+
+        <select id="amount">
+          <option value="0">Choose Amount</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="500">500</option>
+          <option value="1000">1000</option>
+        </select>
+      </div>
+
+      <p id="pin"></p>
+      <button onclick="generatePin()">GENERATE</button>
+    </div>
+
+    <div class="bottom">
+      <input type="text" placeholder="*311*pin#" id="loadCardInput" />
+      <button onclick="loadCard()">LOAD</button>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
