@@ -20,9 +20,11 @@ function generatePin() {
 }
 
 function loadCard() {
+  providerValue = provider.value;
+  amountValue = amount.value;
   let loadCardInput = document.getElementById("loadCardInput");
   if (loadCardInput.value === `*311*${generatedPin}#`) {
-    alert("Card loaded successfully");
+    alert(`Your ${ providerValue} recharge of #${amountValue} was successfully`);
   } else {
     alert("Invalid pin");
   }
