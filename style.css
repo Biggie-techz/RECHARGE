@@ -105,3 +105,27 @@ select option {
 #loadCardInput::placeholder {
   color: var(--quaternary-color);
 }
+
+table,
+th,
+tr,
+td,
+thead,
+tbody {
+  border-collapse: collapse;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#buttonContainer button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#buttonContainer button:hover {
+  background-color: #45a049;
+}

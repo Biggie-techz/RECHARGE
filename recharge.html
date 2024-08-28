@@ -37,6 +37,19 @@
       <input type="text" placeholder="*311*pin#" id="loadCardInput" />
       <button onclick="loadCard()">LOAD</button>
     </div>
+    <button onclick="displayLoadedCards()">Show Loaded Cards</button>
+    <button onclick="displayUnloadedCards()">Show Unloaded Cards</button>
+
+    <table>
+      <thead>
+        <th>S/N</th>
+        <th>PIN</th>
+        <th>PROVIDER</th>
+        <th>AMOUNT</th>
+        <th>USED</th>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
   </body>
 
   <script src="app.js"></script>
