@@ -113,4 +113,4 @@ function displayUnloadedCards() {
   });
 
 }
-// localStorage.clear()
+localStorage.removeItem("rechargeCards");
